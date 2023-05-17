@@ -1,0 +1,111 @@
+h1{
+    color: rgb(56,100,100);
+    font-size: 100px;
+}
+.gato-titulo{
+    color: orange;
+    border: 20px solid black;
+    margin: 10%;
+
+}
+.boton{
+    background-color: aqua;
+}
+.seccion-primaria{
+    height: 200px;
+    background-color: blueviolet;
+}
+#first-p{
+    color:rgb(56,100,100);
+}
+body{
+    background-color: antiquewhite;
+}
+.cats-card{
+    width: 150px;
+    height: 100px;
+    padding:25px;
+    border:10px solid #ccc;
+    margin:25px;
+    background-position: 50% 50%;
+    background-repeat: none;
+    background-size: cover;
+
+}
+.bg-jumbotron{
+    background-image: url('/imagenes/cat-jumbotron.gif');
+    height: 400px;
+    background-repeat: repeat;
+}
+#cat-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#cat-1{
+    background-image: url(/imagenes/cat-1.jpg);
+    
+}
+#cat-3{
+    background-image: url(/imagenes/cat-3.jpg);
+}
+#cat-2{
+    background-image: url(/imagenes/cat-2.webp);
+}
+.grid-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap: 10px;
+    justify-content:left;
+    align-content: stretch;
+    
+}
+.card img{
+    /* height: 200px;
+    width: 200px; */
+}
+.grid-item{
+     background-color: blue;
+     width: auto;
+     height: auto;
+}
+.grid-item-4{
+    background-color: black;
+}
+
+/* Responsive */
+/* Para movil*/
+@media screen and (max-width: 420px){
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 10vw;
+    }
+    body{
+        background-color: aqua;
+    }
+    nav{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}
+
+/* Para tablets*/
+@media screen and (max-width: 620px){
+    p{
+        font-size: 10px;
+    }
+}
+
+/* Para PCs y laptops*/
+@media screen and (max-width: 920px){
+
+    
+    p{
+        font-size: 20px;
+    }
+}
+
